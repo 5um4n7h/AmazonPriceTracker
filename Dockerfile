@@ -5,7 +5,7 @@ FROM openjdk:18-jdk-alpine3.14
 WORKDIR /app
 
 # Copy the Spring Boot JAR file into the container
-COPY amazonpricetracker-1.0.0-SNAPSHOT.jar app.jar
+COPY amazonpricetracker.jar app.jar
 
 # Expose the port that the Spring Boot application will run on
 EXPOSE 8080
