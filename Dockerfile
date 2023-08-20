@@ -6,7 +6,7 @@ FROM openjdk:18-jdk-alpine3.14
 WORKDIR /app
 
 # Copy the built JAR from the build stage to the runtime stage
-COPY /target/amazonpricetracker-1.0.0-SNAPSHOT.jar app.jar
+COPY amazonpricetracker-1.0.0-SNAPSHOT.jar app.jar
 
 # Expose the port that the Spring Boot application will run on
 EXPOSE 8080
